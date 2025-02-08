@@ -1,0 +1,129 @@
+*{
+    /* background: #6190E8;  fallback for old browsers */
+    /* background: linear-gradient( #0059b3, #00ced1);  */
+    /* font-family: "Dancing Script", serif;/ */
+    margin: 0px;
+    padding: 0px;
+    max-width: 100vw;
+}
+
+
+.root-header {
+    top: 0;
+    position: fixed;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    font-size: larger;
+    box-shadow: 2px 2px 5px #423c69;
+    z-index: 1000;
+    background-color: white;
+    color: #272343;
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #272343;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1rem;
+}
+.navbar a:hover{
+    color: #FFCB56;
+}
+/* Home page */
+
+.root-home {
+    height: 100vh; /* Only once */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/geometric-5969508_1920.png'); /* Corrected path */
+    max-width: 100vw;
+    background-size: cover; /* Or contain, or 100% 100%, etc. */
+    background-repeat: no-repeat; /* Often a good idea */
+    background-position: center;  /* Usually looks best */
+    color: white;
+}
+
+.heading-home h1{
+ font-size: 5rem;
+ font-family: 'Courier New', Courier;
+}
+
+.heading-home span{
+    font-family: "Dancing Script", serif;
+    color: #FFCB56;
+}
+
+.paragraph-home{
+    font-size: 1.5rem;
+    color:  white;
+    opacity: 0.8;
+    font-family: 'Courier New', Courier;
+    width: 40vw;
+    margin: 2rem;
+    text-align: center;
+}
+
+button{
+    color: #272343;
+    background-color: #FFCB56;
+    border-radius: 1.74rem;
+    border: none;
+    font-weight: 550;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    transform: scale(1.1, 1.1);
+}
+  h3 {
+    color: #fff; /* White heading color */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #eee; /* Light gray link color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #00a0e9; /* Blue color on hover */
+  }
+  .footer{
+    height: 20vh;
+    max-width: 100vw;
+    bottom: 0px;
+    background-color: #272343;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem
+  }
