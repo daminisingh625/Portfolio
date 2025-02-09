@@ -1,3 +1,17 @@
 #root{
     min-height: 100vh;
 }
+
+.routes-container{
+    /* margin-top: 100vh; */
+    min-height: 100vh;
+    background-image: url("/geometric-5969508_1920.png");
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar a.active {
+    color: #ffcb56; /* Highlight active link */
+  }
+  
