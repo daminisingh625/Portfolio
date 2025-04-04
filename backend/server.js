@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const userAuth = require("./routes/userAuth")
 
 const app = express();
 app.use(express.json());
@@ -36,5 +37,8 @@ app.post("/api/portfolio", async (req, res) => {
   res.json({ message: "Portfolio saved!" });
 });
 
-const PORT = process.env.PORT || 5000;
+app.use("/admin", userAuth);
+
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
