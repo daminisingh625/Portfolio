@@ -1,15 +1,13 @@
 import {useState } from "react";
+import { NavLink } from "react-router-dom";
 export default function Projects(){
     return (
         <>
             <div className="projects-container">
                 <div className="project">
-                    <h3>Website Tracker</h3>
-                    <p>It is a website that tracks your website's performance and provides insights on how to improve it</p>
-                </div>
-                <div className="project">
                     <h3>Damini's Portfolio</h3>
-                    <p>A porfolio application you know if you know</p>
+                    <p>A porfolio website showcasing my skills, projects, and achievements.This portfolio is built using the MERN stack with React for the frontend</p>
+                     <NavLink to="https://github.com/daminisingh625/Portfolio.git" className="project-navlink">Go to github</NavLink>
                 </div>
             </div>
         </>

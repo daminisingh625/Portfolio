@@ -125,13 +125,25 @@ button:hover{
   /* about styled */
 
   .about-container {
-    padding: 2rem;
-    margin-top: 20%;
-    max-width: 60vw;
-    margin: auto;
+    width: 60vw;
+    margin-top: 7%;
     text-align: center;
-    padding: 5vh 2rem;
+    padding-bottom: 7% ;
     overflow-y: auto;
+    border-radius: 1rem;
+    margin-bottom: 10%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  .about-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   }
   
   .about-container h1 {
@@ -196,7 +208,7 @@ button:hover{
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
     margin: 1rem;
     /* color: black; */
-    height: 15vh;
+    min-height: 15vh;
     border-radius: 2rem; /* Corrected syntax */
     padding: 1rem;
     backdrop-filter: blur(10px); /* Adds a glass effect */
@@ -206,7 +218,12 @@ button:hover{
     transform: translateY(30px);
     animation: fadeIn 1s ease-in forwards;
 }
-
+.project .project-navlink{
+  color: #ffcb56;
+}
+.project .project-navlink:hover{
+text-decoration: underline;
+}
 .project:hover {
   transform: scale(1.01);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);

@@ -8,6 +8,8 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import About from './components/About';
 import "./App.css"
+import Signup from './admin/Signup';
+import Login from './admin/Login';
 
 export default function App() {
   return (
@@ -18,9 +20,11 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<NotFound />} />
+          {/* adminRoutes */}
+          <Route path="/admin/signup" element={<Signup/>}/>
+          <Route path="/admin/login" element={<Login/>}/>
         </Routes>
       </div>
       <Footer />

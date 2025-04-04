@@ -1,25 +1,7 @@
 
 export default function Experience() {
   const experiences = [
-    {
-      title: "Full Stack Developer Intern",
-      company: "Tech Innovators",
-      duration: "June 2023 - Dec 2023",
-      description: "Worked on building scalable web applications using MERN stack.",
-    },
-    {
-      title: "Software Developer",
-      company: "Code Solutions",
-      duration: "Jan 2024 - Present",
-      description: "Developing backend services and REST APIs using Node.js and Express.",
-    },
-    {
-      title: "Open Source Contributor",
-      company: "GitHub",
-      duration: "2022 - Present",
-      description: "Contributed to various open-source projects, improving documentation and fixing bugs.",
-    },
-  ];
+  ]
 
   return (
     <div className="experience-container">
